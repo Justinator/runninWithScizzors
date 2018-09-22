@@ -11,7 +11,7 @@
 	height: 80px;
 	width: 100%;
 	margin: 0 auto;
-	background: $white;
+	background: $black;
 	display: flex;
 	align-items: center;
 	box-shadow: 0 10px 20px rgba(42,42,42,.2);
@@ -29,7 +29,7 @@
 }
 .menuLinkWrap{
 	display: flex;
-	justify-content: space-between;
+	justify-content: center;
 	align-items: center;
 }
 .secondaryMenuWrap{
@@ -184,6 +184,7 @@
 	position: relative;
 	display: block;
 	padding: 10px 20px 10px 20px;
+	margin: 0 50px 0 50px;
 	transition: .2s ease all;
 	color: $white;
 }

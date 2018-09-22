@@ -144,34 +144,12 @@
         }
       }
 }
-.logoWrap{
-	padding: 20px;
+#hoursWrap{
+	display:flex;
+	justify-content: center;
 }
-.certLogo{
-	height: 120px;
-	width: auto;
-		@include breakpoint(smallScreen){
-			height: 100px;
-		}
-		@include breakpoint(largeMobileScreen){
-			height: 100px;
-		}
-		@include breakpoint(laptopScreen){
-			height: 50px;
-		}
-		@include breakpoint(largeScreen){
-			height: 120px;
-		}
-}
-#testimonials{
-	background-color: #232323;
-	background-image: url("../img/maze-black.png");
-	//background-image: url("../img/dust_scratches.png");
-	background-position: center center;
-	height: 400px;
-}
-#homeButtonIcon{
-	margin-left: 20px;
+.hours{
+	margin: 0 50px 0 50px;
 }
 .introWrap{
 	padding: 50px 20px 50px 20px;
