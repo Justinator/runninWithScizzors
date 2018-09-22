@@ -1,6 +1,6 @@
-# :snowman: Straightline Refrigeration website
+# :snowman: Alana's Runnin With Scizzors new Jekyll website
 
-This is a Jekyll site for Straightline Refrigeration :octocat:
+This is a Jekyll site for Alana's Runnin With Scizzors :octocat:
 
 # :metal: Getting started
 
