@@ -181,6 +181,7 @@
   height: 90vh;
   width: 100%;
   content: "";
+	background: rgba(0,0,0,.5);
   @include breakpoint(smallScreen){
     height: 50vh;
   }

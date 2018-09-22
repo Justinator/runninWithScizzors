@@ -1,6 +1,12 @@
 /* 10.0 Homepage stylings -------------------------------------------*/
 #homeHero{
-	background-image: url("../img/designBuildHeroLarge.jpg");
+	background-image: url("../img/AlanaWithAClientCropped1.jpg");
+}
+#heroTitle{
+	font-size: 2.827em;
+}
+#heroDesc{
+	font-size: 1.414em;
 }
 .heroHeadingWrap{
 	display: flex;
@@ -44,32 +50,10 @@
       display: none;
     }
 }
-#featuredProjectWrap{
-	position: relative;
-	background-image: url("../img/designBuild2Cropped.jpg");
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-position: center center;
-	padding: 100px 0 100px 0;
-	height: 200px;
-}
-#projectOverlay{
-	background: rgba(0,128,197,.7);
-	position: absolute;
-	top: 0;
-	left: 0;
-	content: "";
-	width: 100%;
-	height: 400px;
-	display: flex;
-	align-items:center;
-	justify-content: center;
-}
 #heroHeading{
 	text-shadow: 1px 1px 1px rgba(0,0,0,.5);
 }
 .homeHeading{
-	background: rgba(0,128,197,.7);
 	padding: 50px;
   @include breakpoint(smallScreen){
     padding: 20px;
@@ -77,12 +61,6 @@
   @include breakpoint(largeMobileScreen){
     padding: 50px;
   }
-}
-#homeHeroNav{
-	background: $primaryColor;
-	padding: 20px 0 20px 0;
-	font-size: 26px;
-	font-weight: 600;
 }
 .heroHeading{
 	padding: 50px;
@@ -92,19 +70,6 @@
     @include breakpoint(largeMobileScreen){
       padding: 50px;
     }
-}
-.homeNavLink{
-	padding: 30px 20px 30px 20px;
-	transition: .3s ease all;
-	text-decoration: none;
-	border: 2px solid $transparent;
-    &:hover{
-      border: 2px solid $white;
-		  transition: .3s ease all;
-    }
-}
-.workWrap{
-	width: 100%;
 }
 .serviceImage{
   width: 100%;
@@ -149,10 +114,34 @@
 	justify-content: center;
 }
 .hours{
-	margin: 0 50px 0 50px;
+	padding: 0 20px 0 20px;
 }
 .introWrap{
 	padding: 50px 20px 50px 20px;
+}
+#services{
+	background: rgb(35,35,35);
+	background: radial-gradient(circle, rgba(35,35,35,1) 30%, rgba(0,0,0,1) 100%);
+}
+#slantedBackground{
+	background-image: url("../img/blackSlantedBackground.png");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+#alanaImage{
+	margin: 0 auto;
+}
+#portfolio{
+	display:flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+.portfolioImage{
+	max-width: 300px;
+	max-height: 400px;
+	margin: 10px;
 }
 .introText{
 	padding: 200px 20px 50px 20px;

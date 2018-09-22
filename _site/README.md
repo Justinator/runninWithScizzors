@@ -1,6 +1,6 @@
-# :snowman: Straightline Refrigeration website
+# :running::scissors: Alana's Runnin With Scizzors new Jekyll website
 
-This is a Jekyll site for Straightline Refrigeration :octocat:
+This is a Jekyll site for Alana's Runnin With Scizzors :octocat:
 
 # :metal: Getting started
 
@@ -40,10 +40,6 @@ Builds your site any time a source file changes and serves it locally at http://
 
 ## :computer: Deploying to Testing Site/Live Site
 
-Live site/testing site is hosted on Cloudways
+  1. Log into FTP or cPanel and find your application
 
-  1. Log into Cloudways dashboard and find your application
-
-  2. Open FTP and find the appropriate application.
-
-  3. Copy all files from your \_site folder into your public_html folder
+  2. Copy all files from your \_site folder into your public_html folder

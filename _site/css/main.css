@@ -1,9 +1,8 @@
 /*
-Theme Name: Insight-Responsive-Child
+Theme Name: Jekyll Custom
 Author: Justin Parsons
 Author URI: https://seejustincode.com/
-Version: 1.0.0
-Template: Insight-Responsive
+Version: 1.0.1
 */
 /* 1.0 sitewide variables -------------------------------------------*/
 /* 2.0 Define mobile breakpoints for our site ----------------------*/
@@ -189,7 +188,8 @@ Template: Insight-Responsive
   z-index: 999;
   height: 90vh;
   width: 100%;
-  content: ""; }
+  content: "";
+  background: rgba(0, 0, 0, 0.5); }
   @media (max-width: 600px) {
     .heroOverlay {
       height: 50vh; } }
@@ -536,7 +536,7 @@ nav {
     text-decoration: none;
     transition: .3s ease all; }
   .linkList2:hover {
-    color: #004e79;
+    color: #b465aa;
     transition: .3s ease all; }
 
 .menuButtonWrap {
@@ -600,11 +600,11 @@ nav {
   display: none; }
   @media (max-width: 600px) {
     .mobileHeroNav {
-      background: #004e79;
+      background: #b465aa;
       padding: 20px 0 20px 0; } }
   @media (min-width: 600px) {
     .mobileHeroNav {
-      background: #004e79;
+      background: #b465aa;
       padding: 20px 0 20px 0; } }
   @media (min-width: 992px) {
     .mobileHeroNav {
@@ -630,9 +630,9 @@ nav {
 .site-footer {
   position: relative;
   z-index: 2;
-  background-color: #FFFFFF;
+  background-color: #000000;
   width: 100%;
-  color: #000000;
+  color: #FFFFFF;
   padding: 0 0 50px 0;
   margin: 0 auto; }
 
@@ -661,7 +661,7 @@ nav {
     color: #894380;
     transition: .3s ease all; }
     .footerContact a:hover {
-      color: #004e79;
+      color: #b465aa;
       transition: .3s ease all; }
 
 @media (max-width: 600px) {
@@ -783,7 +783,7 @@ nav {
     color: #FFFFFF;
     text-decoration: none; }
   #copyrightLinkWrap:hover {
-    color: #004e79; }
+    color: #b465aa; }
 
 #privacyWrap {
   display: flex;
@@ -818,7 +818,7 @@ nav {
   color: #FFFFFF;
   text-decoration: none; }
 #siteAuthorLink:hover {
-  color: #004e79; }
+  color: #b465aa; }
 
 /* 6.0 Site Typography -------------------------------------------*/
 body,
@@ -937,7 +937,7 @@ h6 {
   z-index: 1;
   border: 2px solid #FFFFFF;
   background: rgba(0, 0, 0, 0);
-  padding: 10px 50px 10px 50px;
+  padding: 10px 100px 10px 100px;
   color: #894380;
   transition: .3s ease all;
   cursor: pointer;
@@ -954,7 +954,6 @@ h6 {
   display: flex;
   justify-content: space-evenly;
   width: 100%;
-  margin: 50px auto;
   text-align: center; }
 
 /* 8.0 General Body Styles -------------------------------------------*/
@@ -973,7 +972,7 @@ body {
   color: #894380;
   transition: .3s ease all; }
   .plainLink:hover {
-    color: #004e79;
+    color: #b465aa;
     transition: .3s ease all; }
 
 /*9.0 Icon Styling -------------------------------------------*/
@@ -993,7 +992,13 @@ body {
 
 /* 10.0 Homepage stylings -------------------------------------------*/
 #homeHero {
-  background-image: url("../img/designBuildHeroLarge.jpg"); }
+  background-image: url("../img/AlanaWithAClientCropped1.jpg"); }
+
+#heroTitle {
+  font-size: 2.827em; }
+
+#heroDesc {
+  font-size: 1.414em; }
 
 .heroHeadingWrap {
   display: flex;
@@ -1038,32 +1043,10 @@ body {
     .mobileHeroHeading {
       display: none; } }
 
-#featuredProjectWrap {
-  position: relative;
-  background-image: url("../img/designBuild2Cropped.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center center;
-  padding: 100px 0 100px 0;
-  height: 200px; }
-
-#projectOverlay {
-  background: rgba(0, 128, 197, 0.7);
-  position: absolute;
-  top: 0;
-  left: 0;
-  content: "";
-  width: 100%;
-  height: 400px;
-  display: flex;
-  align-items: center;
-  justify-content: center; }
-
 #heroHeading {
   text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5); }
 
 .homeHeading {
-  background: rgba(0, 128, 197, 0.7);
   padding: 50px; }
   @media (max-width: 600px) {
     .homeHeading {
@@ -1071,12 +1054,6 @@ body {
   @media (min-width: 600px) {
     .homeHeading {
       padding: 50px; } }
-
-#homeHeroNav {
-  background: #894380;
-  padding: 20px 0 20px 0;
-  font-size: 26px;
-  font-weight: 600; }
 
 .heroHeading {
   padding: 50px; }
@@ -1086,18 +1063,6 @@ body {
   @media (min-width: 600px) {
     .heroHeading {
       padding: 50px; } }
-
-.homeNavLink {
-  padding: 30px 20px 30px 20px;
-  transition: .3s ease all;
-  text-decoration: none;
-  border: 2px solid rgba(0, 0, 0, 0); }
-  .homeNavLink:hover {
-    border: 2px solid #FFFFFF;
-    transition: .3s ease all; }
-
-.workWrap {
-  width: 100%; }
 
 .serviceImage {
   width: 100%;
@@ -1136,10 +1101,34 @@ body {
   justify-content: center; }
 
 .hours {
-  margin: 0 50px 0 50px; }
+  padding: 0 20px 0 20px; }
 
 .introWrap {
   padding: 50px 20px 50px 20px; }
+
+#services {
+  background: #232323;
+  background: radial-gradient(circle, #232323 30%, black 100%); }
+
+#slantedBackground {
+  background-image: url("../img/blackSlantedBackground.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center; }
+
+#alanaImage {
+  margin: 0 auto; }
+
+#portfolio {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center; }
+
+.portfolioImage {
+  max-width: 300px;
+  max-height: 400px;
+  margin: 10px; }
 
 .introText {
   padding: 200px 20px 50px 20px;
@@ -1295,28 +1284,8 @@ body {
 .teamImages {
   padding: 20px; }
 
-/* 12.0 Who-We-Service Page Styling --------------------------------------- */
-.iconWrap {
-  display: flex;
-  align-items: center; }
-
-.serviceIcon {
-  margin-left: 50px; }
-
-.descWrap {
-  padding: 0 50px 0 50px; }
-  @media (max-width: 600px) {
-    .descWrap {
-      padding: 0 20px 0 20px; } }
-
 #privacyPolicy {
   margin-top: 200px; }
-
-#sitemap {
-  margin-top: 200px; }
-
-.sublink {
-  margin-left: 50px; }
 
 .contactWrap {
   margin: 0 auto;
