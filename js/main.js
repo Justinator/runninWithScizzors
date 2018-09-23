@@ -390,7 +390,7 @@ Barba.Pjax.getTransition = function() {
 
       module.exports = VanillaTilt;
 
-
+      // end of our checkBefore function
     }
 // end of our barba script
 });

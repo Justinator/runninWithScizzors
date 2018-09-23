@@ -11,7 +11,8 @@
 	height: 80px;
 	width: 100%;
 	margin: 0 auto;
-	background: $black;
+	background: rgb(35,35,35);
+	background: radial-gradient(circle, rgba(35,35,35,1) 30%, rgba(0,0,0,1) 100%);
 	display: flex;
 	align-items: center;
 	box-shadow: 0 10px 20px rgba(42,42,42,.2);
@@ -31,6 +32,15 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
+		@include breakpoint(smallScreen){
+			justify-content: flex-end;
+		}
+		@include breakpoint(largeMobileScreen){
+			justify-content: flex-end;
+		}
+		@include breakpoint(laptopScreen){
+			justify-content: center;
+		}
 }
 .secondaryMenuWrap{
 	display: flex;
@@ -92,13 +102,12 @@
 .menuTextWrap{
 	display: flex;
 	margin-left: 10px;
-	right: 100px;
 }
 .menuBars{
 	cursor: pointer;
 	display: inline-block;
 	width: 30px;
-	padding-top: 7px;
+	padding-top: 8px;
 		span{
 			display: block;
 			position: relative;

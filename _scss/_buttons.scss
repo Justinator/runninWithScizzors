@@ -67,6 +67,12 @@
       background: $white;
     	transition: .3s ease all;
     }
+      @include breakpoint(smallScreen){
+        margin: 20px 0 20px 0;
+      }
+      @include breakpoint(largeMobileScreen){
+        margin: 20px 0 20px 0;
+      }
 }
 .centerButton{
 	margin: 0 auto;
@@ -77,4 +83,13 @@
 	justify-content: space-evenly;
 	width: 100%;
 	text-align: center;
+    @include breakpoint(smallScreen){
+      flex-direction:column;
+    }
+    @include breakpoint(largeMobileScreen){
+      flex-direction:column;
+    }
+    @include breakpoint(laptopScreen){
+      flex-direction: row;
+    }
 }

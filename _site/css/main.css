@@ -176,10 +176,10 @@ Version: 1.0.1
       height: 50vh; } }
   @media (min-width: 600px) {
     .hero {
-      height: 80vh; } }
+      height: 70vh; } }
   @media (min-width: 992px) {
     .hero {
-      height: 90vh; } }
+      height: 80vh; } }
 
 .heroOverlay {
   position: absolute;
@@ -195,10 +195,10 @@ Version: 1.0.1
       height: 50vh; } }
   @media (min-width: 600px) {
     .heroOverlay {
-      height: 80vh; } }
+      height: 70vh; } }
   @media (min-width: 992px) {
     .heroOverlay {
-      height: 90vh; } }
+      height: 80vh; } }
 
 .flex-container {
   display: flex;
@@ -304,7 +304,8 @@ Version: 1.0.1
   height: 80px;
   width: 100%;
   margin: 0 auto;
-  background: #000000;
+  background: #232323;
+  background: radial-gradient(circle, #232323 30%, black 100%);
   display: flex;
   align-items: center;
   box-shadow: 0 10px 20px rgba(42, 42, 42, 0.2); }
@@ -324,6 +325,15 @@ Version: 1.0.1
   display: flex;
   justify-content: center;
   align-items: center; }
+  @media (max-width: 600px) {
+    .menuLinkWrap {
+      justify-content: flex-end; } }
+  @media (min-width: 600px) {
+    .menuLinkWrap {
+      justify-content: flex-end; } }
+  @media (min-width: 992px) {
+    .menuLinkWrap {
+      justify-content: center; } }
 
 .secondaryMenuWrap {
   display: flex;
@@ -382,14 +392,13 @@ nav {
 
 .menuTextWrap {
   display: flex;
-  margin-left: 10px;
-  right: 100px; }
+  margin-left: 10px; }
 
 .menuBars {
   cursor: pointer;
   display: inline-block;
   width: 30px;
-  padding-top: 7px; }
+  padding-top: 8px; }
   .menuBars span {
     display: block;
     position: relative;
@@ -630,7 +639,8 @@ nav {
 .site-footer {
   position: relative;
   z-index: 2;
-  background-color: #000000;
+  background: #232323;
+  background: radial-gradient(circle, #232323 30%, black 100%);
   width: 100%;
   color: #FFFFFF;
   padding: 0 0 50px 0;
@@ -945,6 +955,12 @@ h6 {
   .whiteButton:hover {
     background: #FFFFFF;
     transition: .3s ease all; }
+  @media (max-width: 600px) {
+    .whiteButton {
+      margin: 20px 0 20px 0; } }
+  @media (min-width: 600px) {
+    .whiteButton {
+      margin: 20px 0 20px 0; } }
 
 .centerButton {
   margin: 0 auto;
@@ -955,6 +971,15 @@ h6 {
   justify-content: space-evenly;
   width: 100%;
   text-align: center; }
+  @media (max-width: 600px) {
+    .buttonWrap {
+      flex-direction: column; } }
+  @media (min-width: 600px) {
+    .buttonWrap {
+      flex-direction: column; } }
+  @media (min-width: 992px) {
+    .buttonWrap {
+      flex-direction: row; } }
 
 /* 8.0 General Body Styles -------------------------------------------*/
 body {
@@ -1064,41 +1089,18 @@ body {
     .heroHeading {
       padding: 50px; } }
 
-.serviceImage {
-  width: 100%;
-  height: 100%;
-  padding: 0;
-  margin: 0 auto; }
-  @media (max-width: 600px) {
-    .serviceImage {
-      width: 100%;
-      margin: 20px 0 20px 0; } }
-  @media (min-width: 600px) {
-    .serviceImage {
-      width: 100%;
-      height: 100%; } }
-  @media (min-width: 992px) {
-    .serviceImage {
-      width: 100%;
-      height: 100%;
-      padding: 20px; } }
-  .serviceImage a {
-    text-decoration: none; }
-  .serviceImage:hover .featureOverlay {
-    opacity: 1;
-    transition: opacity;
-    transition: .3s ease all; }
-  .serviceImage:hover .borderedOverlay {
-    opacity: 1;
-    transition: opacity;
-    transition: .3s ease all; }
-  .serviceImage:hover h3 {
-    color: #894380;
-    transition: .3s ease all; }
-
 #hoursWrap {
   display: flex;
   justify-content: center; }
+  @media (max-width: 600px) {
+    #hoursWrap {
+      flex-direction: column; } }
+  @media (min-width: 600px) {
+    #hoursWrap {
+      flex-direction: column; } }
+  @media (min-width: 992px) {
+    #hoursWrap {
+      flex-direction: row; } }
 
 .hours {
   padding: 0 20px 0 20px; }
@@ -1130,216 +1132,37 @@ body {
   max-height: 400px;
   margin: 10px; }
 
-.introText {
-  padding: 200px 20px 50px 20px;
-  width: 60%;
-  margin: 0 auto; }
+/* 11.0 Service Page Styling --------------------------------------- */
+#serviceHero {
+  background-image: url("../img/portfolio/hairstylingTools02.jpg"); }
 
-#workButton {
-  margin-top: 50px; }
-
-.spacer {
-  margin-top: 100px; }
-
-#serviceDesc {
-  padding-bottom: 50px; }
-
-.overlayWrap {
-  position: relative;
-  transform-style: preserve-3d; }
-  .overlayWrap:before {
-    background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.5)), to(rgba(255, 255, 255, 0)));
-    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.6), rgba(255, 255, 255, 0));
-    position: absolute;
-    top: 0;
-    left: 0;
-    content: "";
-    width: 100%;
-    height: 100%; }
-  .overlayWrap:after {
-    position: absolute;
-    top: 0;
-    left: 0;
-    content: "";
-    width: 100%;
-    height: 100%;
-    background-color: #333;
-    box-shadow: 10px 10px 20px rgba(51, 51, 51, 0.7), 0 20px 50px 0 rgba(51, 51, 51, 0.2);
-    -webkit-transform: translateZ(-20px);
-    transform: translateZ(-20px);
-    z-index: -1; }
-
-.serviceTitle {
-  position: absolute;
-  width: 100%;
-  top: 20%;
-  text-align: center;
-  text-shadow: 2px 2px 2px black;
-  color: #FFFFFF;
-  z-index: 3;
-  transform: translateZ(100px); }
+.priceBlock {
+  background: #fafafa;
+  box-shadow: 2px 2px 10px rgba(132, 132, 132, 0.5);
+  margin: 0 10px; }
   @media (max-width: 600px) {
-    .serviceTitle {
-      top: 10%; } }
-
-.title {
-  padding: 50px 50px 10px 50px;
-  transition: .2s ease all; }
-  @media (max-width: 320px) {
-    .title {
-      padding: 10px 30px 10px 30px; } }
-
-.desc {
-  padding: 10px 50px 50px 50px; }
-  @media (max-width: 320px) {
-    .desc {
-      padding: 10px 30px 10px 30px; } }
-  @media (min-width: 1250px) {
-    .desc {
-      padding: 10px 70px 50px 70px; } }
-
-.featureOverlay {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 2;
-  height: 100%;
-  width: 100%;
-  background: rgba(0, 0, 0, 0.5);
-  transition: opacity;
-  opacity: 0;
-  transition: .3s ease all; }
-
-.borderedOverlay {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: absolute;
-  z-index: 2;
-  height: 80%;
-  width: 80%;
-  transition: opacity;
-  opacity: 0;
-  transition: .3s ease all;
-  border: 2px solid #894380;
-  transform: translateZ(50px); }
-
-#lrgFeaturedWorkImage {
-  text-align: center;
-  display: flex;
-  align-items: center; }
-
-.workWrap {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: center;
-  width: 90%;
-  margin: 0 auto; }
-
-#services a {
-  text-decoration: none; }
-
-.CTAcontent {
-  width: 60%; }
-  @media (max-width: 600px) {
-    .CTAcontent {
-      width: 90%;
-      margin: 0 auto;
-      text-align: center;
-      padding: 20px; } }
+    .priceBlock {
+      margin: 10px 0; } }
   @media (min-width: 600px) {
-    .CTAcontent {
-      width: 90%;
-      margin: 0 auto;
-      text-align: center;
-      padding: 20px; } }
+    .priceBlock {
+      margin: 10px 0; } }
+  @media (min-width: 992px) {
+    .priceBlock {
+      margin: 0 10px; } }
 
-.siteCTAWrap {
-  position: relative;
-  background-image: url("../img/designBuild3Cropped.jpg");
-  background-size: cover;
-  background-position: center center;
-  background-repeat: no-repeat;
-  width: 100%;
-  height: 500px; }
-  .siteCTAWrap a {
-    text-decoration: none; }
-
-.CTAoverlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 500px;
-  width: 100%;
-  background: rgba(0, 128, 197, 0.7);
-  z-index: 5;
-  content: "";
-  display: flex;
-  align-items: center; }
-
-/* 11.0 About Page Styling --------------------------------------- */
-.teamImages {
+.outerPriceWrap {
   padding: 20px; }
+
+.priceWrap {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border-bottom: 1px solid #e6e6e6; }
 
 #privacyPolicy {
   margin-top: 200px; }
 
-.contactWrap {
-  margin: 0 auto;
-  margin-bottom: 50px; }
-
-#primaryContact {
-  display: flex;
-  flex-direction: column; }
-  #primaryContact input {
-    margin-top: 10px;
-    margin-bottom: 10px;
-    padding: .7em;
-    border: none;
-    border-bottom: 2px solid #fff;
-    transition: .3s ease all;
-    border-radius: 5px;
-    box-shadow: 2px 2px 10px rgba(42, 42, 42, 0.4); }
-  #primaryContact textarea {
-    margin-top: 10px;
-    margin-bottom: 10px;
-    padding: .7em;
-    border: none;
-    border-bottom: 2px solid #fff;
-    transition: .3s ease all;
-    border-radius: 5px;
-    box-shadow: 2px 2px 10px rgba(42, 42, 42, 0.4); }
-  #primaryContact :focus {
-    outline: none;
-    border-bottom: 2px solid #894380;
-    transition: .3s ease all; }
-  #primaryContact input[type="submit"] {
-    margin-top: 10px;
-    border-bottom: none; }
-
-#cd-zoom-in,
-#cd-zoom-out {
-  width: 32px;
-  height: 32px;
-  margin-left: 10px;
-  cursor: pointer;
-  background-color: rgba(137, 67, 128, 0.8);
-  background-image: url("../img/contact/cd-icon-controller.svg");
-  background-repeat: no-repeat;
-  background-size: 32px 64px; }
-  #cd-zoom-in:hover,
-  #cd-zoom-out:hover {
-    background-color: #894380; }
-
-#cd-zoom-in {
-  margin-top: 10px;
-  margin-bottom: 1px;
-  background-position: 50% 0; }
-
-#cd-zoom-out {
-  background-position: 50% -32px; }
+#contactHero {
+  background-image: url("../img/portfolio/hairstylingTools03.jpg"); }
 
 /*# sourceMappingURL=main.css.map */

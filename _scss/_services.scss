@@ -1,0 +1,27 @@
+/* 11.0 Service Page Styling --------------------------------------- */
+#serviceHero{
+  background-image: url("../img/portfolio/hairstylingTools02.jpg");
+}
+.priceBlock{
+  background: #fafafa;
+  box-shadow: 2px 2px 10px rgba(132,132,132,.5);
+  margin: 0 10px;
+    @include breakpoint(smallScreen){
+      margin: 10px 0;
+    }
+    @include breakpoint(largeMobileScreen){
+      margin: 10px 0;
+    }
+    @include breakpoint(laptopScreen){
+      margin: 0 10px;
+    }
+}
+.outerPriceWrap{
+  padding: 20px;
+}
+.priceWrap{
+  display:flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border-bottom: 1px solid #e6e6e6;
+}
