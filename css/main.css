@@ -1113,7 +1113,7 @@ body {
   background: radial-gradient(circle, #232323 30%, black 100%); }
 
 #slantedBackground {
-  background-image: url("../img/blackSlantedBackground.png");
+  background-image: url("../img/BlackSlantedBackground.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center; }
