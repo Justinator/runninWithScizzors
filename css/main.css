@@ -1015,6 +1015,15 @@ body {
   display: flex;
   flex-direction: column; }
 
+#phoneIcon {
+  font-size: 24px; }
+
+#copyrightIcon {
+  font-size: 16px; }
+
+#facebookIcon {
+  font-size: 30px; }
+
 /* 10.0 Homepage stylings -------------------------------------------*/
 #homeHero {
   background-image: url("../img/AlanaWithAClientCropped1.jpg"); }
