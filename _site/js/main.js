@@ -1787,22 +1787,3 @@ Barba.Pjax.getTransition = function() {
     }
 // end of our barba script
 });
-// open our sites mobile menu
-$(function() {
-    $(".menuTextWrap").click(function(e){
-        $(".menu").toggleClass("open");
-        	e.stopPropagation();
-    });
-});
-// close our sites mobile menu when the X icon is clicked
-$(function() {
-    $(".closeMenu").click(function(e){
-        	$(".menu").removeClass("open");
-    });
-});
-// close our sites mobile menu when a link item is clicked
-$(function() {
-    $(".linkList").click(function(e){
-        	$(".menu").removeClass("open");
-    });
-});

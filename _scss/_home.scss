@@ -1,116 +1,146 @@
 /* 10.0 Homepage stylings -------------------------------------------*/
-#homeHero{
-	background-image: url("../img/AlanaWithAClientCropped1.jpg");
+#homeHero {
+  background-image: url("../img/AlanaWithAClientCropped1.jpg");
 }
-#heroTitle{
-	font-size: 2.827em;
+#heroTitle {
+  font-size: 2.827em;
+  text-transform: uppercase;
+  margin: 0;
 }
-#heroDesc{
-	font-size: 1.414em;
+#heroDesc {
+  font-size: 1.414em;
+  text-transform: uppercase;
+  margin: 0;
 }
-.heroHeadingWrap{
-	display: flex;
-	flex-direction: row;
-	align-items: flex-end;
-	height: 100%;
-	align-items: center;
-	justify-content: center;
-    @include breakpoint(smallScreen){
-      display: none;
-    }
-    @include breakpoint(largeMobileScreen){
-      display: none;
-    }
-    @include breakpoint(laptopScreen){
-      display: flex;
-    }
-}
-.mobileHeroHeading{
-	display: none;
-    @include breakpoint(smallScreen){
-      background: #1D1D1D;
-		  display: flex;
-      flex-direction: column;
-      align-items: flex-end;
-      height: 100%;
-      align-items: center;
-      justify-content: center;
-      padding: 20px;
-    }
-    @include breakpoint(largeMobileScreen){
-      background: #1D1D1D;
-		  display: flex;
-      flex-direction: column;
-      align-items: flex-end;
-      height: 100%;
-      align-items: center;
-      justify-content: center;
-      padding: 20px;
-    }@include breakpoint(laptopScreen){
-      display: none;
-    }
-}
-#heroHeading{
-	text-shadow: 1px 1px 1px rgba(0,0,0,.5);
-}
-.homeHeading{
-	padding: 50px;
-  @include breakpoint(smallScreen){
-    padding: 20px;
+.heroHeadingWrap {
+  display: none;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-align: end;
+  -ms-flex-align: end;
+  -ms-grid-row-align: flex-end;
+  align-items: flex-end;
+  height: 100%;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -ms-grid-row-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  @include breakpoint(laptopScreen) {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
   }
-  @include breakpoint(largeMobileScreen){
+}
+.mobileHeroHeading {
+  background: #1d1d1d;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: end;
+  -ms-flex-align: end;
+  align-items: flex-end;
+  height: 100%;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  padding: 20px;
+  @include breakpoint(laptopScreen) {
+    display: none;
+  }
+}
+#heroHeading {
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+}
+.homeHeading {
+  padding: 20px;
+  @include breakpoint(largeMobileScreen) {
     padding: 50px;
   }
 }
-.heroHeading{
-	padding: 50px;
-    @include breakpoint(smallScreen){
-      padding: 20px;
-    }
-    @include breakpoint(largeMobileScreen){
-      padding: 50px;
-    }
+.heroHeading {
+  padding: 20px;
+  @include breakpoint(largeMobileScreen) {
+    padding: 50px;
+  }
 }
-#hoursWrap{
-	display:flex;
-	justify-content: center;
-		@include breakpoint(smallScreen){
-			flex-direction: column;
-		}
-		@include breakpoint(largeMobileScreen){
-			flex-direction: column;
-		}
-		@include breakpoint(laptopScreen){
-			flex-direction: row;
-		}
+#hoursWrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  @include breakpoint(laptopScreen) {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+  }
 }
-.hours{
-	padding: 0 20px 0 20px;
+.hours {
+  padding: 0 20px 0 20px;
 }
-.introWrap{
-	padding: 50px 20px 50px 20px;
+#services {
+  background: rgb(35, 35, 35);
+  background: -webkit-radial-gradient(
+    circle,
+    rgba(35, 35, 35, 1) 30%,
+    rgba(0, 0, 0, 1) 100%
+  );
+  background: radial-gradient(
+    circle,
+    rgba(35, 35, 35, 1) 30%,
+    rgba(0, 0, 0, 1) 100%
+  );
 }
-#services{
-	background: rgb(35,35,35);
-	background: radial-gradient(circle, rgba(35,35,35,1) 30%, rgba(0,0,0,1) 100%);
+#slantedBackground {
+  background-image: url("../img/BlackSlantedBackground.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
 }
-#slantedBackground{
-	background-image: url("../img/BlackSlantedBackground.png");
-	background-size: cover;
-	background-repeat: no-repeat;
-	background-position: center center;
+#alanaImage {
+  margin: 0 auto;
 }
-#alanaImage{
-	margin: 0 auto;
+#portfolio {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr) [1];
+  grid-template-columns: repeat(1, 1fr);
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  gap: 20px;
+  margin-bottom: 50px;
+  @include breakpoint(largeMobileScreen) {
+    -ms-grid-columns: (1fr) [2];
+    grid-template-columns: repeat(2, 1fr);
+  }
+  @include breakpoint(laptopScreen) {
+    -ms-grid-columns: (1fr) [3];
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
-#portfolio{
-	display:flex;
-	flex-direction: row;
-	flex-wrap: wrap;
-	justify-content: center;
-}
-.portfolioImage{
-	max-width: 300px;
-	max-height: 400px;
-	margin: 10px;
+.portfolioImage {
+  width: 100%;
+  height: 400px;
+  -o-object-fit: cover;
+  object-fit: cover;
+  margin: 10px;
 }

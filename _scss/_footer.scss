@@ -1,225 +1,200 @@
 /* 5.0 Footer Stylings -------------------------------------------*/
-.site-info{
-	display: flex;
-	align-content: center;
-	align-items: center;
-	justify-content: center;
-	flex-direction: column;
-	height: auto;
-	width: 100%;
-	text-align: center;
-	background: $white;
-	list-style-type: none;
-    @include breakpoint(laptopScreen){
-      flex-direction: row;
-		  height: 120px;
+.site-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  height: auto;
+  width: 100%;
+  text-align: center;
+  background: $white;
+  list-style-type: none;
+  @include breakpoint(laptopScreen) {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    height: 120px;
+  }
+}
+.site-footer {
+  position: relative;
+  z-index: 2;
+  background: rgb(35, 35, 35);
+  background: -webkit-radial-gradient(
+    circle,
+    rgba(35, 35, 35, 1) 30%,
+    rgba(0, 0, 0, 1) 100%
+  );
+  background: radial-gradient(
+    circle,
+    rgba(35, 35, 35, 1) 30%,
+    rgba(0, 0, 0, 1) 100%
+  );
+  width: 100%;
+  color: $white;
+  padding: 0 0 50px 0;
+  margin: 0 auto;
+}
+.footerContact {
+  padding: 50px 0 50px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  a {
+    text-decoration: none;
+    color: $primaryColor;
+    -webkit-transition: 0.3s ease all;
+    transition: 0.3s ease all;
+    &:hover {
+      color: $secondaryColor;
+      -webkit-transition: 0.3s ease all;
+      transition: 0.3s ease all;
     }
+  }
 }
-.site-footer{
-	position: relative;
-	z-index: 2;
-	background: rgb(35,35,35);
-	background: radial-gradient(circle, rgba(35,35,35,1) 30%, rgba(0,0,0,1) 100%);
-	width: 100%;
-	color: $white;
-	padding: 0 0 50px 0;
-	margin: 0 auto;
+#copyrightWrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  @include breakpoint(laptopScreen) {
+    -webkit-box-pack: left;
+    -ms-flex-pack: left;
+    justify-content: left;
+  }
+  p {
+    margin: 0;
+  }
 }
-.footerLogo{
-	height: auto;
-	width: 300px;
-		@include breakpoint(smallScreen){
-			width: 250px;
-		}
-		@include breakpoint(largeMobileScreen){
-			width: 250px;
-		}
-		@include breakpoint(laptopScreen){
-			width: 200px;
-		}
-		@include breakpoint(largeScreen){
-			width: 300px;
-		}
+#copyright {
+  background: $primaryColor;
+  color: $white;
+  margin-bottom: -50px;
+  font-size: 14px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  @include breakpoint(laptopScreen) {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    font-size: 12px;
+  }
+  @include breakpoint(largeScreen) {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    font-size: 16px;
+  }
+  a {
+    text-decoration: none;
+    color: $white;
+  }
+  &:hover {
+    color: $lightGrey;
+  }
 }
-.footerContact{
-	padding: 50px 0 50px 0;
-	display: flex;
-	align-items: center;
-	  a{
-	  	text-decoration: none;
-	  	color: $primaryColor;
-	  	transition: .3s ease all;
-	      &:hover{
-	        color: $secondaryColor;
-	        transition: .3s ease all;
-	      }
-  	}
+#copyrightContentWrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  @include breakpoint(laptopScreen) {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+  }
 }
-#footerLogo{
-	@include breakpoint(smallScreen){
-		text-align:center;
-	}
-	@include breakpoint(largeMobileScreen){
-		text-align:center;
-	}
-	@include breakpoint(laptopScreen){
-		text-align:left;
-	}
+#copyrightLinkWrap {
+  text-align: center;
+  a {
+    color: $white;
+    text-decoration: none;
+  }
+  &:hover {
+    color: $secondaryColor;
+  }
 }
-.footerLinkWrap{
-	text-align: right;
-		@include breakpoint(smallScreen){
-			text-align: center;
-		}
-		@include breakpoint(largeMobileScreen){
-			text-align: center;
-		}
-		@include breakpoint(laptopScreen){
-			text-align: right;
-		}
+#privacyWrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
-.footerLink{
-	position: relative;
-	color: $primaryColor;
-	text-decoration: none;
-	padding: 10px 20px 10px 20px;
-	margin: 10px 0 10px 0;
-	transition: .3s ease all;
-	font-size: 20px;
-    &:after{
-      position: absolute;
-    	height: 0;
-    	width: 3px;
-    	background: $primaryColor;
-    	content: "";
-    	transition: .3s ease all;
-    	bottom: 12px;
-    	left: 0;
-    }
-    @include breakpoint(smallScreen){
-      bottom: 0;
-      width: 0%;
-    }
-      &:hover{
-        &:after{
-          width: 3px;
-        	height: 50%;
-        	transition: .3s ease all;
-        }
-      }
+.borderRight {
+  border-right: 1px solid $white;
+  padding: 0 10px 0 10px;
 }
-#footerEmail{
-	font-size: 22px;
-		@include breakpoint(smallScreen){
-			font-size: 16px;
-		}
+#privacyLink {
+  padding: 0 10px 0 10px;
 }
-#copyrightWrap{
-	display: flex;
-	flex-direction: row;
-	align-items: center;
-	@include breakpoint(smallScreen){
-		justify-content: center;
-	}
-	@include breakpoint(largeMobileScreen){
-		justify-content: center;
-	}
-	@include breakpoint(laptopScreen){
-		justify-content: left;
-	}
+#contactLink {
+  padding: 0 10px 0 10px;
 }
-#copyright{
-	background: $primaryColor;
-	color: $white;
-	margin-bottom: -50px;
-	font-size: 16px;
-	display: flex;
-	flex-direction: row;
-		@include breakpoint(smallScreen){
-			font-size: 14px;
-		}
-		@include breakpoint(largeMobileScreen){
-			font-size: 14px;
-		}
-    @include breakpoint(laptopScreen){
-      flex-direction: row;
-			font-size: 12px;
-    }
-		@include breakpoint(largeScreen){
-      flex-direction: row;
-			font-size: 16px;
-    }
-      a{
-        text-decoration: none;
-      	color: $white;
-      }
-	      &:hover{
-	        color: $lightGrey;
-	      }
+#siteAuthor {
+  text-align: center;
+  padding: 10px;
+  @include breakpoint(laptopScreen) {
+    text-align: right;
+  }
 }
-#copyrightContentWrap{
-	display: flex;
-	align-items: center;
-	flex-direction: row;
-    @include breakpoint(smallScreen){
-      justify-content: center;
-      flex-direction: column;
-    }
-		@include breakpoint(largeMobileScreen){
-			justify-content: center;
-      flex-direction: column;
-		}
-		@include breakpoint(laptopScreen){
-			display: flex;
-			align-items: center;
-			flex-direction: row;
-		}
-}
-#copyrightLinkWrap{
-	text-align: center;
-		a{
-			color: $white;
-			text-decoration: none;
-		}
-			&:hover{
-				color: $secondaryColor;
-			}
-}
-#privacyWrap{
-	display: flex;
-	justify-content: center;
-	align-items: center;
-}
-.borderRight{
-	border-right: 1px solid $white;
-	padding: 0 10px 0 10px;
-}
-#privacyLink{
-	padding: 0 10px 0 10px;
-}
-#contactLink{
-	padding: 0 10px 0 10px;
-}
-#siteAuthor{
-	text-align: right;
-		@include breakpoint(smallScreen){
-			text-align: center;
-			padding: 10px;
-		}
-		@include breakpoint(largeMobileScreen){
-			text-align: center;
-			padding: 10px;
-		}
-		@include breakpoint(laptopScreen){
-			text-align: right;
-		}
-}
-#siteAuthorLink{
-	a{
-		color: $white;
-		text-decoration: none;
-	}
-		&:hover{
-			color: $secondaryColor;
-		}
+#siteAuthorLink {
+  a {
+    color: $white;
+    text-decoration: none;
+  }
+  &:hover {
+    color: $secondaryColor;
+  }
 }

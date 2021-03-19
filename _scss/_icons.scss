@@ -1,24 +1,17 @@
 /*9.0 Icon Styling -------------------------------------------*/
-.whiteIcon{
-	color: $white;
-	transition: .3s ease all;
+.whiteIcon {
+  color: $white;
+  transition: 0.3s ease all;
 }
-.greyIcon{
-	color: $lightGrey;
+.primaryIcon {
+  color: $primaryColor;
 }
-.primaryIcon{
-	color: $primaryColor;
+#phoneIcon {
+  font-size: 16px;
 }
-.iconBlock{
-	display: flex;
-	flex-direction: column;
+#copyrightIcon {
+  font-size: 16px;
 }
-#phoneIcon{
-	font-size: 24px;
-}
-#copyrightIcon{
-	font-size: 16px;
-}
-#facebookIcon{
-	font-size: 30px;
+#facebookIcon {
+  font-size: 30px;
 }

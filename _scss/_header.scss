@@ -1,351 +1,270 @@
 /*4.0 Header Styling -------------------------------------------*/
-.site-header{
-	position: fixed;
-	top: 0;
-	left: 0;
-	z-index: 9999;
-	height: 70px;
-	width: 100vw;
+.site-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  height: 70px;
+  width: 100vw;
 }
-.main-navigation{
-	height: 80px;
-	width: 100%;
-	margin: 0 auto;
-	background: rgb(35,35,35);
-	background: radial-gradient(circle, rgba(35,35,35,1) 30%, rgba(0,0,0,1) 100%);
-	display: flex;
-	align-items: center;
-	box-shadow: 0 10px 20px rgba(42,42,42,.2);
-		@include breakpoint(smallScreen){
-			height: 70px;
-		}
+.main-navigation {
+  width: 100%;
+  margin: 0 auto;
+  background: rgb(35, 35, 35);
+  background: -webkit-radial-gradient(
+    circle,
+    rgba(35, 35, 35, 1) 30%,
+    rgba(0, 0, 0, 1) 100%
+  );
+  background: radial-gradient(
+    circle,
+    rgba(35, 35, 35, 1) 30%,
+    rgba(0, 0, 0, 1) 100%
+  );
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  box-shadow: 0 10px 20px rgba(42, 42, 42, 0.2);
 }
-.secondaryNavigation{
-	height: 40px;
-	margin: 0 auto;
-	width: 100%;
-	background: $primaryColor;
-	display: flex;
-	align-items: center;
+.secondaryNavigation {
+  height: 40px;
+  margin: 0 auto;
+  width: 100%;
+  background: $primaryColor;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
-.menuLinkWrap{
-	display: flex;
-	justify-content: center;
-	align-items: center;
-		@include breakpoint(smallScreen){
-			justify-content: flex-end;
-		}
-		@include breakpoint(largeMobileScreen){
-			justify-content: flex-end;
-		}
-		@include breakpoint(laptopScreen){
-			justify-content: center;
-		}
+.menuLinkWrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
-.secondaryMenuWrap{
-	display: flex;
-	justify-content: flex-end;
-	align-items: center;
+.secondaryMenuWrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
-.secondaryLink{
-	color: $white;
-	padding: 0 20px 0 20px;
-	text-decoration: none;
-	transition: .3s ease all;
-	font-size: 14px;
-		&:hover{
-			color: $lightGrey;
-			transition: .3s ease all;
-		}
-			@include breakpoint(smallScreen){
-				padding: 0 10px 0 10px;
-				font-size: 12px;
-			}
+.secondaryLink {
+  color: $white;
+  text-decoration: none;
+  -webkit-transition: 0.3s ease all;
+  transition: 0.3s ease all;
+  padding: 0 10px 0 10px;
+  font-size: 12px;
+  &:hover {
+    color: $lightGrey;
+    -webkit-transition: 0.3s ease all;
+    transition: 0.3s ease all;
+  }
+  @include breakpoint(largeMobileScreen) {
+    padding: 0 20px 0 5px;
+    font-size: 14px;
+  }
 }
-#faqLink{
-	@include breakpoint(tabletScreen){
-		display: block;
-	}
-	@include breakpoint(smallScreen){
-		display: none;
-	}
+nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  height: 70px;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  width: 100%;
 }
-.site-content{
-	margin-top: 35px;
+.menu {
+  position: absolute;
+  top: 0;
+  z-index: 99999;
+  height: 100vh;
+  width: 100vw;
+  background-color: $white;
+  -webkit-transform: translateX(-100%);
+  transform: translateX(-100%);
+  -webkit-transition: 0.2s ease-out all;
+  transition: 0.2s ease-out all;
 }
-.entry-header{
-	display:none;
+.linkWrap {
+  position: absolute;
+  top: 150px;
+  margin: 0 50px 0 50px;
+  width: 80%;
+  text-align: center;
+  @include breakpoint(largeMobileScreen) {
+    top: 75px;
+    padding: 0;
+    margin: 0;
+    a {
+      color: $primaryColor;
+      text-decoration: none;
+    }
+    li {
+      list-style-type: none;
+      margin-top: 50px;
+      font-size: 1.414em;
+      border-bottom: 1px solid $lightGrey;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+      justify-content: space-between;
+    }
+    @include breakpoint(smallScreen) {
+      margin-top: 30px;
+      font-size: 1em;
+    }
+  }
+  @include breakpoint(smallScreen) {
+    top: 75px;
+    padding: 0;
+    margin: 0;
+    a {
+      color: $primaryColor;
+      text-decoration: none;
+    }
+    li {
+      list-style-type: none;
+      margin-top: 50px;
+      font-size: 1.414em;
+      border-bottom: 1px solid $lightGrey;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+      justify-content: space-between;
+    }
+    @include breakpoint(smallScreen) {
+      margin-top: 30px;
+      font-size: 1em;
+    }
+  }
 }
-.siteLogo{
-	margin-top: 8px;
-	height: auto;
-	width: 200px;
-		@include breakpoint(smallScreen){
-			width: 125px;
-		}
+.menuLink {
+  position: relative;
+  display: block;
+  padding: 10px 20px 10px 20px;
+  -webkit-transition: 0.2s ease all;
+  transition: 0.2s ease all;
+  color: $white;
+  @include breakpoint(largeMobileScreen) {
+    margin: 0 50px 0 50px;
+  }
 }
-	nav{
-	display: flex;
-	align-items:center;
-	height: 70px;
-	justify-content: space-between;
-	width: 100%;
+.menuLink {
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+  &:after {
+    position: absolute;
+    content: "";
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    height: 3px;
+    background: $primaryColor;
+    -webkit-transition: 0.3s ease all;
+    transition: 0.3s ease all;
+  }
+  &:hover {
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+    &:after {
+      position: absolute;
+      content: "";
+      bottom: 0;
+      left: 0;
+      opacity: 1;
+      -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+      width: 100%;
+      height: 3px;
+      background: $primaryColor;
+      -webkit-transition: 0.3s ease all;
+      transition: 0.3s ease all;
+    }
+  }
 }
-.menuText{
-	cursor: pointer;
-	font-size: 26px;
-	padding-right: 10px;
-	color: $primaryColor;
-	text-decoration: none;
-	transition: .3s ease-out all;
+.menu {
+  .active {
+    a {
+      border-bottom: 2px solid $primaryColor !important;
+      color: $white;
+      width: 100%;
+      text-align: initial;
+    }
+  }
 }
-.menuTextWrap{
-	display: flex;
-	margin-left: 10px;
+.linkList2 {
+  .active {
+    a {
+      margin-bottom: -1px;
+      border-bottom: 3px solid $primaryColor !important;
+      -webkit-transition: 0.2s ease all;
+      transition: 0.2s ease all;
+    }
+  }
 }
-.menuBars{
-	cursor: pointer;
-	display: inline-block;
-	width: 30px;
-	padding-top: 8px;
-		span{
-			display: block;
-			position: relative;
-			background-color: $primaryColor;
-			height: 3px;
-			width: 100%;
-			margin-top: 4px;
-		}
-}
-.menu{
-	position: absolute;
-	top: 0;
-	z-index: 99999;
-	height: 100vh;
-	width: 100vw;
-	background-color:  $white;
-	transform: translateX(-100%);
-	transition: .2s ease-out all;
-}
-.open{
-	position: fixed;
-	transform: translate(0);
-	transition: .1s ease-out all;
-}
-#mobileMenuLogo{
-	display: flex;
-	margin: 0 auto;
-	margin-top: 50px;
-	width: 200px;
-}
-.linkWrap{
-	position: absolute;
-	top: 150px;
-	margin: 0 50px 0 50px;
-	width: 80%;
-	text-align: center;
-		@include breakpoint(largeMobileScreen){
-			top: 75px;
-			padding: 0;
-			margin: 0;
-				a{
-					color: $primaryColor;
-					text-decoration: none;
-				}
-				li{
-					list-style-type: none;
-					margin-top: 50px;
-					font-size: 1.414em;
-					border-bottom: 1px solid $lightGrey;
-					display: flex;
-					align-items: center;
-					justify-content: space-between;
-				}
-					@include breakpoint(smallScreen){
-						margin-top: 30px;
-						font-size: 1em;
-					}
-		}
-		@include breakpoint(smallScreen){
-			top: 75px;
-			padding: 0;
-			margin: 0;
-				a{
-					color: $primaryColor;
-					text-decoration: none;
-				}
-				li{
-					list-style-type: none;
-					margin-top: 50px;
-					font-size: 1.414em;
-					border-bottom: 1px solid $lightGrey;
-					display: flex;
-					align-items: center;
-					justify-content: space-between;
-				}
-					@include breakpoint(smallScreen){
-						margin-top: 30px;
-						font-size: 1em;
-					}
-		}
-}
-.menuLink{
-	position: relative;
-	display: block;
-	padding: 10px 20px 10px 20px;
-	margin: 0 50px 0 50px;
-	transition: .2s ease all;
-	color: $white;
-}
-.menuLink{
-		&:after{
-			position: absolute;
-			content: "";
-			bottom: 0;
-			left: 0;
-			width: 100%;
-			opacity: 0;
-			height: 3px;
-			background: $primaryColor;
-			transition: .3s ease all;
-		}
-		&:hover{
-			&:after{
-			position: absolute;
-			content: "";
-			bottom: 0;
-			left: 0;
-			opacity:1;
-			width: 100%;
-			height: 3px;
-			background: $primaryColor;
-			transition: .3s ease all;
-		}
-	}
-}
-.menu{
-	.active{
-		a{
-				border-bottom: 2px solid $primaryColor !important;
-				color: $white;
-				width: 100%;
-				text-align: initial;
-			}
-		}
-}
-.linkList2{
-	.active{
-		a{
-			margin-bottom: -1px;
-			border-bottom: 3px solid $primaryColor !important;
-			transition: .2s ease all;
-		}
-	}
-}
-.closeMenu{
-	position: absolute;
-	cursor: pointer;
-	top: 30px;
-	right: 50px;
-}
-.linkList2{
-	display:none;
-		@include breakpoint(laptopScreen){
-			display: flex;
-			height: 70px;
-			align-items:center;
-			list-style-type: none;
-			font-size: 18px;
-			font-weight: 600;
-		}
-		@include breakpoint(largeScreen){
-			display: flex;
-			height: 70px;
-			align-items:center;
-			list-style-type: none;
-			font-size: 20px;
-			font-weight: 600;
-		}
-		a{
-			color:$primaryColor;
-			text-decoration: none;
-			transition: .3s ease all;
-		}
-		&:hover{
-			color: $secondaryColor;
-			transition: .3s ease all;
-		}
-}
-.menuButtonWrap{
-	display:flex;
-	right: 30px;
-		@include breakpoint(laptopScreen){
-			display: none;
-		}
-}
-.heroNav{
-	display: block;
-	background: #1D1D1D;
-	padding: 50px 0 50px 0;
-	margin-top: -100px;
-		@include breakpoint(smallScreen){
-			display: none;
-		}
-		@include breakpoint(largeMobileScreen){
-			display: none;
-		}
-		@include breakpoint(laptopScreen){
-			display: block;
-		}
-}
-.heroNavWrap{
-	display: flex;
-	flex-direction: row;
-	justify-content: space-between;
-	align-items: center;
-		@include breakpoint(smallScreen){
-			flex-direction: column;
-			justify-content: center;
-		}
-		@include breakpoint(largeMobileScreen){
-			flex-direction: column;
-			justify-content: center;
-		}
-		@include breakpoint(laptopScreen){
-			flex-direction: row;
-			justify-content: space-between;
-		}
-		li{
-			list-style-type: none;
-				@include breakpoint(smallScreen){
-					margin: 5px 0 5px 0;
-				}
-		}
-}
-.heroNavLink{
-	color: #fff;
-	text-decoration: none;
-	transition: .3s ease all;
-	padding: 5px 0 5px 0;
-		@include breakpoint(smallScreen){
-			color: #3598db;
-		}
-		&:hover{
-			color: $primaryColor;
-			transition: .3s ease all;
-		}
-}
-.mobileHeroNav{
-	display: none;
-		@include breakpoint(smallScreen){
-			background: $secondaryColor;
-			padding: 20px 0 20px 0;
-		}
-		@include breakpoint(largeMobileScreen){
-			background: $secondaryColor;
-			padding: 20px 0 20px 0;
-		}
-		@include breakpoint(laptopScreen){
-			display: none;
-		}
+.linkList2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 70px;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  list-style-type: none;
+  font-size: 16px;
+  font-weight: 600;
+  padding: 0;
+  @include breakpoint(largeScreen) {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: 70px;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    list-style-type: none;
+    font-size: 20px;
+    font-weight: 600;
+  }
+  a {
+    color: $primaryColor;
+    text-decoration: none;
+    -webkit-transition: 0.3s ease all;
+    transition: 0.3s ease all;
+  }
+  &:hover {
+    color: $secondaryColor;
+    -webkit-transition: 0.3s ease all;
+    transition: 0.3s ease all;
+  }
 }

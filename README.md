@@ -1,6 +1,6 @@
-# :running::scissors: Alana's Runnin With Scizzors new Jekyll website
+# :running::scissors: Alana's Runnin' With Scizzors new Jekyll website
 
-This is a Jekyll site for Alana's Runnin With Scizzors :octocat:
+This is a Jekyll site for Alana's Runnin' With Scizzors :octocat:
 
 # :metal: Getting started
 
@@ -32,7 +32,7 @@ The js folder holds all your JavaScript files, here you will find JavaScript for
 
 sass --watch \_scss/main.scss:css/main.css
 
-## :runner: Runnin local Jekyll build
+## :runner: Runnin' local Jekyll build
 
 Builds your site any time a source file changes and serves it locally at http://127.0.0.1:4000
 
@@ -40,6 +40,6 @@ Builds your site any time a source file changes and serves it locally at http://
 
 ## :computer: Deploying to Testing Site/Live Site
 
-  1. Log into FTP or cPanel and find your application
+1. Log into FTP or cPanel and find your application
 
-  2. Copy all files from your \_site folder into your public_html folder
+2. Copy all files from your \_site folder into your public_html folder
